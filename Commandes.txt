@@ -1,0 +1,10 @@
+donner fichier
+scp drivers-ddboat-v2/gps_driver_v2.py ue32@172.20.25.205:pDD/  
+
+prendre fichier
+scp ue32@172.20.25.205:pDD/gps_data.gpx /home/adembch/Desktop/
+
+donner dossier 
+scp -r drivers-ddboat-v2 ue32@172.20.25.205:pDD/
+
+python3 Autonomous_gpsggg.py --lat 48.19932 --lon -3.01620 --vitesse_false 200
